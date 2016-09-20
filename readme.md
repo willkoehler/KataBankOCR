@@ -2,13 +2,17 @@
 
 <http://codingdojo.org/cgi-bin/index.pl?KataBankOCR>
 
-## Steps to run the code
+I wrote the Ruby solution first and then ported to JavaScript.
 
-Currently the code is exercised solely via the RSpec tests.
+## Ruby Solution
+
+### Steps to run the code
+
+Currently the code is exercised via the RSpec tests.
 
 Start by installing necessary gems
 
-    cd [folder where you cloned the code]
+    cd [folder where you cloned the code]/ruby
     bundle
 
 Then run the tests
@@ -18,6 +22,15 @@ Then run the tests
 Or use guard to run the tests automatically as you work
 
     bundle exec guard
+
+## Javascript Solution
+
+### Steps to run the code
+
+Currently the code is exercised via the Jasmine tests.
+
+No installation is necessary. Just open the Jasmine test runner in a browser:
+[javascript/SpecRunner.html](javascript/SpecRunner.html)
 
 ## Status
 
