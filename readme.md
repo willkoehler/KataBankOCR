@@ -1,14 +1,28 @@
-# Partial Solution of KataBankOCR
+# Partial Solution of Bank OCR Kata
 
-<http://codingdojo.org/cgi-bin/index.pl?KataBankOCR>
+<http://codingdojo.org/kata/BankOCR/>
 
-I wrote the Ruby solution first and then ported to JavaScript.
+## Overview
+
+This is a partial solution to the Bank OCR Kata in two languages: Ruby and Javascript.
+The goal for the Ruby solution was to see how far I could get in ~2 hours, documenting
+the steps I would take towards a complete solution. (See [Status](#status) below.)
+
+I Later ported the solution to JavaScript to see how closely I could reproduce the
+solution, including Ruby structure and coding style, in JavaScript.
+
+There is no runtime environment at this point. The Ruby code is exercised via the RSpec
+tests. The JavaScript code is exercised by the Jasmine tests.
 
 ## Ruby Solution
 
 ### Steps to run the code
 
-Currently the code is exercised via the RSpec tests.
+This code requires a standard Ruby development environment. The basic components are:
+
+- **Ruby 2.1** (or newer).
+- **Build tools**. XCode or GCC and development libraries. Needed to build gems.
+- **Bundler 1.12** (or newer). This can be installed with `gem install bundler`
 
 Start by installing necessary gems
 
@@ -21,13 +35,11 @@ Then run the tests
 
 Or use guard to run the tests automatically as you work
 
-    bundle exec guard
+    bin/guard
 
 ## Javascript Solution
 
 ### Steps to run the code
-
-Currently the code is exercised via the Jasmine tests.
 
 No installation is necessary. Just open the Jasmine test runner in a browser:
 [javascript/SpecRunner.html](javascript/SpecRunner.html)
